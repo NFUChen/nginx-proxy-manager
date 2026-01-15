@@ -105,26 +105,6 @@ export function DNSProviderFields({ showBoundaryBox = false }: Props) {
 							</div>
 						)}
 					</Field>
-					<Field name="meta.propagationSeconds">
-						{({ field }: any) => (
-							<div className="mt-3">
-								<label htmlFor="propagationSeconds" className="form-label">
-									<T id="certificates.dns.propagation-seconds" />
-								</label>
-								<input
-									id="propagationSeconds"
-									type="number"
-									className="form-control"
-									min={0}
-									max={7200}
-									{...field}
-								/>
-								<small className="text-muted">
-									<T id="certificates.dns.propagation-seconds-note" />
-								</small>
-							</div>
-						)}
-					</Field>
 				</>
 			) : null}
 		</div>

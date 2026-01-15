@@ -856,12 +856,6 @@ const internalCertificate = {
 		if (hasConfigArg) {
 			args.push(`--${dnsPlugin.full_plugin_name}-credentials`, credentialsLocation);
 		}
-		if (certificate.meta.propagation_seconds !== undefined) {
-			args.push(
-				`--${dnsPlugin.full_plugin_name}-propagation-seconds`,
-				certificate.meta.propagation_seconds.toString(),
-			);
-		}
 
 		// Add key-type parameter if specified
 		if (certificate.meta?.key_type) {

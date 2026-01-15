@@ -27,7 +27,6 @@ export function SSLOptionsFields({ forHttp = true, forceDNSForNew, requireDomain
 		if (fieldName === "meta.dnsChallenge" && !e.target.checked) {
 			setFieldValue("meta.dnsProvider", undefined);
 			setFieldValue("meta.dnsProviderCredentials", undefined);
-			setFieldValue("meta.propagationSeconds", undefined);
 		}
 	};
 

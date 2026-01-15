@@ -57,7 +57,6 @@ export function SSLCertificateField({
 			dnsChallenge,
 			dnsProvider,
 			dnsProviderCredentials,
-			propagationSeconds,
 		} = v;
 		if (forHttp && !newValue?.value) {
 			sslForced && setFieldValue("sslForced", false);
@@ -69,7 +68,6 @@ export function SSLCertificateField({
 			dnsChallenge && setFieldValue("dnsChallenge", undefined);
 			dnsProvider && setFieldValue("dnsProvider", undefined);
 			dnsProviderCredentials && setFieldValue("dnsProviderCredentials", undefined);
-			propagationSeconds && setFieldValue("propagationSeconds", undefined);
 		}
 	};
 
